@@ -18,6 +18,8 @@
         nav {
             background-color: #333;
             padding: 10px;
+            text-align: center;
+
         }
         nav a {
             color: rgba(235, 240, 241, 0.767);
@@ -40,6 +42,15 @@
             margin-bottom: 20px;
         }
         aside {
+            display:flex;
+            gap: 20px;
+        }
+        {
+            flex: 3;
+            margin-bottom: 40px;
+        }margin-top: 10px;
+        {
+            flex: 1;
             margin-top: 20px;
         }
         table {
@@ -66,25 +77,27 @@
     </style>
 </head>
 <body>
-<nav>
-    <a href="index.html">Voltar para a página inicial</a>
-</nav>
+
 
 <!-- Tabela de Parceiros !-->
 <header>
     <h1 style="color: #3eb0dd;">Nossos Parceiros</h1>
-</header>
+</header>   
+    <nav>
+    <a href="index.html">Voltar para a página inicial</a>
+    </nav>
 <main>
-<section>
-<p>Acreditamos piamente que grandes conquistas e inovações disruptivas nascem da força de parcerias sólidas, ecossistemas colaborativos e visão compartilhada de futuro.<br>Trabalhamos lado a lado com corporações líderes de mercado para assegurar excelência operacional, segurança de ponta e valor contínuo para os nossos clientes e parceiros de negócios.</p>
+    <div class="conteudo-flex">
+        <section class="principal">
+            <p>Acreditamos piamente que grandes conquistas e inovações disruptivas nascem da força de parcerias sólidas, ecossistemas colaborativos e visão compartilhada de futuro.<br>Trabalhamos lado a lado com corporações líderes de mercado para assegurar excelência operacional, segurança de ponta e valor contínuo para os nossos clientes e parceiros de negócios.</p>
+                <article>
+                <h2>TechCorp Global - Inovação, Nuvem e Infraestrutura</h2>
+                <p>Parceira estratégica fundamental no desenvolvimento de software de alta performance, arquitetura de sistemas distribuídos e infraestrutura avançada em nuvem.<br>Garantindo día e noite a máxima resiliência, segurança de dados em múltiplos níveis e escalabilidade robusta para todas as nossas soluções digitais, permitindo atendimento a milhões de requisições simultâneas sem perdas de estabilidade ou latência.</p>
+              </article>
+        </section>
 
-<article>
-<h2>TechCorp Global - Inovação, Nuvem e Infraestrutura</h2>
-<p>Parceira estratégica fundamental no desenvolvimento de software de alta performance, arquitetura de sistemas distribuídos e infraestrutura avançada em nuvem.<br>Garantindo día e noite a máxima resiliência, segurança de dados em múltiplos níveis e escalabilidade robusta para todas as nossas soluções digitais, permitindo atendimento a milhões de requisições simultâneas sem perdas de estabilidade ou latência.</p>
-</article>
-
-<aside>
-<table border="1" style="background-color: #ffffff;">
+<aside class="barra lateral">
+    <table border="1" style="background-color: #ffffff;">
     <tbody>
         <tr>
             <td><img src="techcorp.jpg" alt="TechCorp Global" width="150"></td>
