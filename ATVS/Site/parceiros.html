@@ -13,13 +13,12 @@
             background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20;
+            padding: 20px;
         }
         nav {
             background-color: #333;
             padding: 10px;
             text-align: center;
-
         }
         nav a {
             color: rgba(235, 240, 241, 0.767);
@@ -41,22 +40,26 @@
         article {
             margin-bottom: 20px;
         }
-        aside {
-            display:flex;
-            gap: 20px;
-        }
-        {
-            flex: 3;
-        }
-        {
-            flex: 1;
+        .conteudo-com-aside {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .barra-lateral {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #a7a5a5;
+            border-radius: 8px;
+        }
+        .principal {
+            flex: 3;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -70,8 +73,8 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 5px;
+            
             bottom: 0;
             width: 100%;
         }
@@ -89,6 +92,18 @@
     </nav>
 <main>
     <div class="conteudo-com-aside">
+        
+            <aside class="barra-lateral">
+        <h3>Avisos Importantes</h3>
+        <p>A Empresa é LGBT e fechadíssima com a extrema-esquerda</p>
+        
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li><a href="#">Seja um parceiro</a></li>
+            <li><a href="#">Contato</a>
+            <li><a href="#">Sobre Nós</a>
+        </ul>
+            </aside>
 
         <section class="principal">
             <p>Acreditamos piamente que grandes conquistas e inovações disruptivas nascem da força de parcerias sólidas, ecossistemas colaborativos e visão compartilhada de futuro.<br>Trabalhamos lado a lado com corporações líderes de mercado para assegurar excelência operacional, segurança de ponta e valor contínuo para os nossos clientes e parceiros de negócios.</p>
@@ -96,16 +111,6 @@
             <article>
                 <h2>TechCorp Global - Inovação, Nuvem e Infraestrutura</h2>
                 <p>Parceira estratégica fundamental no desenvolvimento de software de alta performance, arquitetura de sistemas distribuídos e infraestrutura avançada em nuvem.<br>Garantindo día e noite a máxima resiliência, segurança de dados em múltiplos níveis e escalabilidade robusta para todas as nossas soluções digitais, permitindo atendimento a milhões de requisições simultâneas sem perdas de estabilidade ou latência.</p>
-            </article>
-
-            <article>
-                <h2> DesignStudio Criativo - Branding, Identidade e Experiência de Marca</h2>
-                <p>Agência de design premiada internacionalmente, responsável por conceber identidades visuais marcantes, arquitetura de marca sofisticada e interfaces digitais altamente intuitivas.<br>Juntos, unimos rigor estético e engenharia de usabilidade para criar experiências de marca inesquecíveis que geram conexão emocional imediata, fidelização de clientes e forte diferenciação competitiva nos mercados em que atuamos.</p>
-            </article>
-
-            <article>
-                <h2>LogiExpress Solutions - Logística Global e Cadeia de Suprimentos</h2>
-                <p>Especialista em inteligência de cadeia de suprimentos e distribuição automatizada em larga escala para mercados nacionais e internacionais.<br>Nossa aliança estratégica permite otimizar prazos de entrega, reduzir custos operacionais de transporte e implementar práticas sustentáveis de logística reversa e rastreabilidade em tempo real para todo o nosso portfólio físico e de e-commerce.</p>
             </article>
 
             <table border="1" style="background-color: #ffffff;">
@@ -117,8 +122,11 @@
              </tr>
              </tbody>
             </table>
-
 <br>
+            <article>
+                <h2> DesignStudio Criativo - Branding, Identidade e Experiência de Marca</h2>
+                <p>Agência de design premiada internacionalmente, responsável por conceber identidades visuais marcantes, arquitetura de marca sofisticada e interfaces digitais altamente intuitivas.<br>Juntos, unimos rigor estético e engenharia de usabilidade para criar experiências de marca inesquecíveis que geram conexão emocional imediata, fidelização de clientes e forte diferenciação competitiva nos mercados em que atuamos.</p>
+            </article>
 
             <table border="1" style="background-color: #ffffff;">
              <tbody>
@@ -129,10 +137,13 @@
              </tr>
              </tbody>   
             </table>
-
 <br>
+            <article>
+                <h2>LogiExpress Solutions - Logística Global e Cadeia de Suprimentos</h2>
+                <p>Especialista em inteligência de cadeia de suprimentos e distribuição automatizada em larga escala para mercados nacionais e internacionais.<br>Nossa aliança estratégica permite otimizar prazos de entrega, reduzir custos operacionais de transporte e implementar práticas sustentáveis de logística reversa e rastreabilidade em tempo real para todo o nosso portfólio físico e de e-commerce.</p>
+            </article>
 
-            <table border="1" style="background-color: #ffffff;">
+               <table border="1" style="background-color: #ffffff;">
              <tbody>
              <tr>
                <td><img src="logi.jpg" alt="LogiExpress Solutions" width="150"></td>
@@ -143,14 +154,6 @@
             </table>
         </section>
 
-    <aside class="barra-lateral">
-        <h3>Links Rápidos</h3>
-        <ul>
-            <li><a href="#">Seja um Parceiro</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-        </ul>
-    </aside>
 
     </div>
 </main>
