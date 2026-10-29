@@ -5,7 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inovatech - Início</title>
         <style>
-            
+          body {
+            background-image: url("nv.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 80px;
+        }     
+          body {
+            background-image: url("nv.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 80px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgba(235, 240, 241, 0.767);
+            text-decoration: revert;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        .conteudo-com-aside {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .barra-lateral {
+            flex: 1;
+            background-color: #fdfdfd;
+            padding: 20px;
+            border: 1px solid #a7a5a5;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .principal {
+            flex: 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }  
         </style>
     </head>
 <body>
@@ -23,7 +116,9 @@
     <a href="portifolio.html">Portifólio</a>
 </nav>
     <main>
-        <section>
+        <div class="conteudo-com-aside">
+
+        <section class="principal">
         <p align="center">Na InovaTech, estamos comprometidos em fornecer soluções digitais inovadoras e personalizadas para impulsionar o crescimento do seu negócio. Nossa equipe de especialistas combina tecnologia de ponta, design estratégico e análise de dados para criar experiências digitais excepcionais que conectam marcas a seus públicos-alvo de maneira significativa.</p>
         <center><img src="inv.jpg" alt="Logo da InovaTech"  width="200"></center>
         <article>
@@ -36,8 +131,7 @@
         </article>
         </section>
 <!-- Cadastro de Newsletter -->
-<section>
-<aside>
+<aside class="barra-lateral">
 <form>
     <fieldset>
         <legend><strong>Cadastro de Newsletter</strong></legend>
@@ -51,7 +145,7 @@
     </fieldset>
 </form>
 </aside>
-</section>
+        </div>
 </main>
 
 <footer>
