@@ -10,18 +10,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            background-attachment: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            padding-bottom: 80px;
-        }     
-          body {
-            background-image: url("nv.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: center;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
@@ -103,9 +92,60 @@
             z-index: 1000;
         }
         .anunciosss {
+            position: relative;
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 350px;
+            margin: 40px auto;
         }  
+        .anuncio {
+            position: absolute;
+            width: 180px;
+            height: 230px;
+        }
+        .anuncio img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            cursor: pointer;
+        }
+        .anuncio input {
+            display: none;
+        }
+        .anuncio input:checked+label {
+            display: none;
+        }
+        .anuncio:nth-child(1) {
+            transform: translate(-210px,-140px);
+            z-index: 1;
+        }
+        .anuncio:nth-child(2) {
+            transform: translate(-195px,-130px);
+            z-index: 2;
+        }
+        .anuncio:nth-child(3) {
+            transform: translate(-170px,-110px);
+            z-index: 3;
+        }
+        .anuncio:nth-child(4) {
+            transform: translate(-135px,-90px);
+            z-index: 4;
+        }
+        .anuncio:nth-child(5) {
+            transform: translate(-95px,-60px);
+            z-index: 5;
+        }
+        .anuncio:nth-child(6) {
+            transform: translate(-45px,-20px);
+            z-index: 6;
+        }
+        .anuncio:nth-child(7) {
+            transform: translate(-5px, +20px);
+            z-index: 7;
+        }
         </style>
     </head>
 <body>
@@ -128,6 +168,62 @@
         <section class="principal">
         <p align="center">Na InovaTech, estamos comprometidos em fornecer soluções digitais inovadoras e personalizadas para impulsionar o crescimento do seu negócio. Nossa equipe de especialistas combina tecnologia de ponta, design estratégico e análise de dados para criar experiências digitais excepcionais que conectam marcas a seus públicos-alvo de maneira significativa.</p>
         <center><img src="inv.jpg" alt="Logo da InovaTech"  width="200"></center>
+      
+        <!--Anúncios-->
+        <form class="anunciosss">
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio1">
+                <label for="anuncio1">
+                    <img src="img1.jpeg" alt="Anúncio 1">
+                
+                </label>
+            </div>
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio2">
+                <label for="anuncio2">
+                    <img src="img2.jpeg" alt="Anúncio 2">
+                </label>
+            </div>
+            
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio3">
+                <label for="anuncio3">
+                    <img src="img3.jpeg" alt="Anúncio 3">
+                </label>
+            </div>
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio4">
+                <label for="anuncio4">
+                    <img src="img4.jpeg" alt="Anúncio 4">
+                </label>
+            </div>
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio5">
+                <label for="anuncio5">
+                    <img src="img5.jpeg" alt="Anúncio 5">
+                </label>
+            </div>
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio6">
+                <label for="anuncio6">
+                    <img src="img6.jpg" alt="Anúncio 6">
+                </label>
+            </div>
+
+            <div class="anuncio">
+                <input type="checkbox" id="anuncio7">
+                <label for="anuncio7">
+                    <img src="img7.jpeg" alt="Anúncio 7">
+                </label>
+            </div>
+          
+            <button type="reset">Mostrar anúncio novamente</button>
+        </form>
         <article>
         <h2>Revolucionando o Futuro Digital da sua Empresa com Estratégia e Inovação</h2>
         <p>No cenário corporativo moderno, a velocidade da transformação digital dita quais empresas lideram o mercado e quais ficam para trás. Na InovaTech, nossa missão fundamental é atuar como o catalisador definitivo para o crescimento exponencial do seu negócio. Combinamos engenharia de software avançada, arquitetura em nuvem de altíssima performance e design estratégico centrado no usuário para criar ecossistemas digitais robustos, seguros e altamente escaláveis.<br>Desde a concepção da sua identidade online até a automação completa de fluxos operacionais complexos, nossa equipe multidisciplinar trabalha lado a lado com os seus gestores para garantir que cada linha de código e cada escolha de design reflitam os valores essenciais da sua marca, maximizando o engajamento do seu público-alvo e elevando os seus resultados comerciais a patamares inéditos.</p>
@@ -136,59 +232,6 @@
         <h2>Experiência Comprovada e Parcerias de Longo Prazo</h2>
         <p>O sucesso de uma estratégia digital não se mede apenas pela entrega pontual de projetos, mas pela capacidade contínua de adaptação às rápidas mudanças do mercado global. É por isso que construímos relacionamentos sólidos e duraderos com centenas de organizações ao redor do mundo, oferecendo suporte técnico proativo, consultoria especializada e melhoria contínua em todas as frentes tecnológicas.<br>Convidamos você a explorar detalhadamente nossas soluções, conhecer nossos produtos de prateleira e descobrir como a nossa metodologia ágil pode transformar os desafios operacionais do seu dia a dia em oportunidades reais de inovação e liderança de mercado. Venha construir o próximo capítulo da sua história de sucesso conosco.</p>
         </article>
-        <!--IMAGENS-->
-        <div class="anunciosss">
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio1">
-                <label for="anuncio1">
-                    <img src="matugay.jpeg" alt="Anúncio 1">
-                
-                </label>
-            </div>
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio2">
-                <label for="anuncio2">
-                    <img src="matugay.jpeg" alt="Anúncio 2">
-                </label>
-            </div>
-            
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio3">
-                <label for="anuncio3">
-                    <img src="matugay.jpeg" alt="Anúncio 3">
-                </label>
-            </div>
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio4">
-                <label for="anuncio4">
-                    <img src="matugay.jpeg" alt="Anúncio 4">
-                </label>
-            </div>
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio5">
-                <label for="anuncio5">
-                    <img src="matugay.jpeg" alt="Anúncio 5">
-                </label>
-            </div>
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio6">
-                <label for="anuncio6">
-                    <img src="matugay.jpeg" alt="Anúncio 6">
-                </label>
-            </div>
-
-            <div class="anuncio">
-                <input type="checkbox" id="anuncio7">
-                <label for="anuncio7">
-                    <img src="matugay.jpeg" alt="Anúncio 7">
-                </label>
-            </div>
-        </div>
         </section>
 <!-- Cadastro de Newsletter -->
 <aside class="barra-lateral">
