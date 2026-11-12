@@ -96,13 +96,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 350px;
-            margin: 40px auto;
-        }  
+            min-height: 0px;
+            margin: 5px auto;
+        }
+        .anunciosss button {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            color: #555;
+            font-size: 11px;
+            padding: 5px;
+            cursor: pointer;
+            opacity: 0.35;
+        }
+        .anunciosss button:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
         .anuncio {
             position: absolute;
-            width: 180px;
-            height: 230px;
+            width: 100%;
         }
         .anuncio img {
             width: 100%;
@@ -157,7 +172,15 @@
 <nav>
     <a href="sobre.html">Sobre</a>
     <a href="contate-nos.html">Contate-nos</a>
+
+<div class="dropdown">
     <a href="produtos.html">Produtos</a>
+    <div class="dropdown-conteudo">
+        <a href="produtos.html">Nossos Produtos</a>
+        <a href="serviços.html">Nossos Serviços</a>
+        <a href="parceiros.html">Nossos Parceiros</a> 
+    </div>
+</div>
     <a href="serviços.html">Serviços</a>
     <a href="parceiros.html">Parceiros</a> 
     <a href="portifolio.html">Portifólio</a>
