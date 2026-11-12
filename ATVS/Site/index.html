@@ -161,6 +161,32 @@
             transform: translate(-5px, +20px);
             z-index: 7;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-conteudo {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 170px;
+            z-index: 1001;
+        }
+        .dropdown a {
+            display: block;
+            padding: 12px;
+            margin: 0;
+            text-align: left;
+            text-decoration: none;
+        }
+        .dropdown-conteudo a:hover {
+            background-color: #555;
+        }
+        .dropdown:hover .dropdown-conteudo {
+            display: block;
+        }
         </style>
     </head>
 <body>
@@ -181,6 +207,7 @@
         <a href="parceiros.html">Nossos Parceiros</a> 
     </div>
 </div>
+
     <a href="serviços.html">Serviços</a>
     <a href="parceiros.html">Parceiros</a> 
     <a href="portifolio.html">Portifólio</a>
