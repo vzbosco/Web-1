@@ -118,7 +118,7 @@
             line-height: 1;
             text-indent: 0;
             font-family: Arial, sans-serif;
-            
+
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -129,9 +129,15 @@
 
             font-size: 0;
             font-weight: bold;
-
             box-shadow: 0 2px 8px rgba(0,0,0,0.03);
             transition: 0.2s;
+        }
+        .anuncio summary::after {
+            content: "x";
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1;
         }
         .anuncio.anuncio:not([open]) {
             display: none;
@@ -242,37 +248,37 @@
         <div class="anunciosss">
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img1.jpeg" alt="Anúncio 1">
             </details>
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img2.jpeg" alt="Anúncio 2">
             </details>
             
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img3.jpeg" alt="Anúncio 3">
             </details>
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img4.jpeg" alt="Anúncio 4">
             </details>
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img5.jpeg" alt="Anúncio 5">
             </details>
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img6.jpg" alt="Anúncio 6">
             </details>
 
             <details class="anuncio" open>
-                <summary class="fechar">x</summary>
+                <summary class="fechar"></summary>
                 <img src="img7.jpeg" alt="Anúncio 7">
             </details>
 
